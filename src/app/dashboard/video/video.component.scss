@@ -1,0 +1,19 @@
+.video {
+    position: relative;
+    .play {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        position: absolute;
+        top: 38%;
+        right: 44%;
+        background-color: var(--bg-light);
+        border: 6px solid #ffffff40;
+        img {
+            padding-left: 4px;
+        }
+    }
+}

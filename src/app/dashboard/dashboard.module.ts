@@ -5,10 +5,13 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { SalesComponent } from './sales/sales.component';
+import { ReferrerComponent } from './referrer/referrer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { VideoComponent } from './video/video.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, StatisticsComponent, SalesComponent],
+  declarations: [DashboardComponent, StatisticsComponent, SalesComponent, ReferrerComponent, ProfileComponent, VideoComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule
