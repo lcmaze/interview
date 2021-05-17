@@ -1,1 +1,141 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --bg-dark: #43425d;
+    --bg-dark2: #3b3b53;
+    --bg-light: #f0f0f7;
+    --text-light: #cecfd0;
+    --text-dark: #4d4f5c;
+    --notify: #ff4a33;
+    --highlight: #5652c0;
+    --button: #a3a0fb;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    transition: all .2s ease;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+}
+
+.dropdown-menu {
+    padding: 0px;
+    border: 0px;
+    border-radius: .25rem;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px 2px #00000010;
+    .dropdown-item {
+        font-size: 14px;
+        color: #3d3d3d;
+        padding: 10px 15px;
+    }
+}
+
+.dropdown-menu>li>a:hover {
+    background-image: none;
+    background-color: var(--highlight);
+    color: #fff;
+}
+
+.namelist {
+    font-weight: 700;
+    color: var(--button);
+    font-size: 100px;
+    text-align: center;
+}
+
+.plus-btn {
+    background-color: var(--highlight);
+    border: 1px solid var(--highlight);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    img {
+        padding-left: 10px;
+    }
+}
+
+.plus-btn:hover {
+    background-color: #fff;
+    color: var(--highlight);
+}
+
+.main-set {
+    padding: 45px;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            font-weight: 400;
+            color: var(--bg-dark);
+        }
+    }
+}
+
+.box {
+    background-color: white;
+    padding: 15px 15px 0px 15px;
+    height: 100%;
+    box-shadow: 0px 4px 6px 0px #00000020;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        h6 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .selector {
+            padding: 5px;
+            color: #3d3d3d;
+            border: 1px solid var(--text-light);
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0px 2px 6px 0px #00000020;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+     ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    .namelist {
+        font-size: 80px;
+    }
+    .main-set {
+        padding: 16px;
+    }
+}

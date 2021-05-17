@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'interview';
+
+  toggled : boolean = false;
+  innerWidth : any;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.width();
+  }
+
+  toggle() {
+    this.toggled = !this.toggled;
+  }
+
+  width(){
+    this.innerWidth = window.innerWidth;
+    if(this.innerWidth >= 992)
+      this.toggled = false;
+    else
+      this.toggled = true;
+  }
+
 }
+

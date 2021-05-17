@@ -1,0 +1,33 @@
+<a href="index.html" class="logo px-4 py-3">IMPEKABLE</a>
+
+<div class="links">
+    <li>
+        <a routerLink="/home" [class]="sval == 'home' ? 'active px-4 py-3' : 'px-4 py-3'">
+            <img class="pe-3 normal" src="assets/icons/home.png" alt="">
+            <img class="pe-3 selected" src="assets/icons/home-selected.png" alt="">
+            <span>Home</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/" [class]="sval == 'dashboard' ? 'active px-4 py-3' : 'px-4 py-3'">
+            <img class="pe-3 normal" src="assets/icons/dashboard.png" alt="">
+            <img class="pe-3 selected" src="assets/icons/dashboard-selected.png" alt="">
+            <span>Dashboard</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/inbox" [class]="sval == 'inbox' ? 'active px-4 py-3' : 'px-4 py-3'">
+            <img class="pe-3 normal" src="assets/icons/inbox.png" alt="">
+            <img class="pe-3 selected" src="assets/icons/inbox-selected.png" alt="">
+            <span>Inbox</span>
+            <span class="chip px-2 mt-1">New</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="/products" [class]="sval == 'products' ? 'active px-4 py-3' : 'px-4 py-3'">
+            <img class="pe-3 normal" src="assets/icons/products.png" alt="">
+            <img class="pe-3 selected" src="assets/icons/products-selected.png" alt="">
+            <span>Products</span>
+        </a>
+    </li>
+</div>
