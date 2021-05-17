@@ -4,7 +4,7 @@
     --bg-dark: #43425d;
     --bg-dark2: #3b3b53;
     --bg-light: #f0f0f7;
-    --text-light: #cecfd0;
+    --text-light: #bdbdbd;
     --text-dark: #4d4f5c;
     --notify: #ff4a33;
     --highlight: #5652c0;
@@ -120,6 +120,7 @@ body {
             padding: 5px;
             color: #3d3d3d;
             border: 1px solid var(--text-light);
+            background-color: transparent;
             border-radius: 6px;
             outline: none;
             box-shadow: 0px 2px 6px 0px #00000020;

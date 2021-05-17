@@ -1,0 +1,72 @@
+.content {
+    .pic {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .face {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 120px;
+        }
+        .edit {
+            background-color: var(--notify);
+            padding: 6px;
+            border-radius: 30px;
+            position: absolute;
+            margin-left: 70px;
+            margin-bottom: 70px;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #fff;
+            .pencil {
+                width: 10px;
+                margin-top: -21px;
+                margin-left: -2px;
+            }
+        }
+    }
+    .name {
+        text-align: center;
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--bg-dark);
+        }
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .userset {
+        cursor: pointer;
+        img {
+            float: left;
+            width: 55px;
+            height: 55px;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+    }
+    .userset:hover {
+        h5 {
+            text-decoration: underline;
+        }
+    }
+}
